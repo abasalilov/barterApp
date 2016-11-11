@@ -7,7 +7,7 @@ var router = express.Router();
 
 
 //get user prof from database 
-router.route('/:user')
+router.route('/user')
 .get(function(req, res) {
 
 });
