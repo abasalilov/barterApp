@@ -16,7 +16,9 @@ server.listen(server.get('port'), function () {
 
 server.use(bodyParser.json()); 
 server.use(bodyParser.urlencoded({ extended: true })); 
+
 server.use(express.static(__dirname + '/client'));
+//giving me an error with bower
 server.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 server.use('/api/trades', tradesRouter);
