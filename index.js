@@ -15,6 +15,8 @@ server.listen(server.get('port'), function () {
 server.use(bodyParser.json()); 
 server.use(bodyParser.urlencoded({ extended: true })); 
 server.use(express.static(__dirname + '/client'));
-
+server.use('/api/trades', tradesRouter);
+server.use('/api/user', userRouter);
+server.use('/api/confirmation', confirmationRouter);
 
 module.exports = server;
