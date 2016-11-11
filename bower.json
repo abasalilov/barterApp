@@ -1,0 +1,16 @@
+{
+  "name": "barter",
+  "version": "1.0.0",
+  "authors": [
+    "Aleks Basalilov"
+  ],
+  "description": "Barter your skills for services and goods you require",
+  "license": "NONE",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+  ],
+  "dependencies": {
+    "angular": "~1.5.8"
+  }
+}
