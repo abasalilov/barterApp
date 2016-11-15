@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/local/Cellar/node/7.0.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+Yarn version: 
+  0.16.1
+
+Node version: 
+  7.0.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "scripts": {
+      "start": "node index.js",
+      "postinstall": "npm install bower && bower install"
+    },
+    "dependencies": {
+      "body-parser": "^1.15.2",
+      "express": "^4.14.0",
+      "mongoose": "^4.6.7",
+      "morgan": "^1.7.0",
+      "node-craigslist": "^1.1.0",
+      "q": "^1.4.1",
+      "request": "^2.78.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+bower manifest: 
+  {
+    "name": "barter",
+    "version": "1.0.0",
+    "authors": [
+      "Aleks Basalilov"
+    ],
+    "description": "Barter your skills for services and goods you require",
+    "license": "NONE",
+    "ignore": [
+      "**/.*",
+      "bower_components",
+      "node_modules"
+    ],
+    "dependencies": {
+      "angular": "~1.5.8",
+      "angular-route": "^1.5.8"
+    }
+  }
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:28:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)

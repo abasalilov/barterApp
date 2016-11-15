@@ -5,6 +5,10 @@
   <title>Barter</title>
   <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="./view/trade/tradeModule.js"></script>
+  <script src="./view/login/loginModule.js"></script>
+  <script src="./view/services/tradeServices.js"></script>
+  <script src="./view/services/tokenServices.js"></script>
   <script src="./barterApp.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
@@ -12,13 +16,10 @@
   <div class="container">
     <div class="navbar-header">
     </div>
-
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#/signIn"><i class="fa fa-home"></i> SignIn</a></li>
-      <li><a href="#/signUp"><i class="fa fa-shield"></i> SignUp</a></li>
-      <li><a href="#/profile"><i class="fa fa-shield"></i> Profile</a></li>
-      <li><a href="#/trade"><i class="fa fa-comment"></i> Trade</a></li>
-    </ul>
+      <a href="#/signin">SignIn</a>
+      <a href="#/signup">SignUp</a>
+      <a href="#/profile"> Profile</a>
+      <a href="#/trade">Trade</a>
   </div>
 </nav>
 <body ng-app='barterApp'>

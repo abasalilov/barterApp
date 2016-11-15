@@ -1,0 +1,20 @@
+<div >
+  <h1>gator-Trade</h1>
+    <form name="TradeForm" ng-submit='tradeMade()'>   
+    <br/>
+    <input type='text' ng-model='user.barterSkill'  placeholder="Skill">
+    <br/>
+    <input type="text" ng-model='user.location' placeholder="Location">
+    <br/>
+    <button value="Trade" type="submit">click here</button>
+    <br/>
+  </form>
+  <h1>Results :</h1>
+  <div ng-repeat="listing in data.listings">
+    <br/>
+    <div> <h3>Title: {{ listing.title }} </h3></div>
+    <div><h3>Location: {{ listing.location }}</h3></div>
+    <a ng-href={{listing.url}}> <h3>url: {{listing.url}}</h3></a>
+    <br/>
+  </div>
+</div>
